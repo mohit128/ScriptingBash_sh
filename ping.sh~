@@ -1,0 +1,16 @@
+#!/bin/bash
+
+while true; do
+
+	ping=$(ping -c 1 192.168.20.195 | awk '{print substr($5,10)}')
+	
+	if [ $ping == "1" ]; then
+		echo "Reachable hai server ...."
+	else
+		echo "ERROR : Unreachable...."
+		break
+
+	fi
+        sleep 3
+done
+	
