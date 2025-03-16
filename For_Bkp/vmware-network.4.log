@@ -1,0 +1,4 @@
+Thu Mar 13 08:48:09 AM IST 2025 : Executing '/etc/vmware-tools/scripts/vmware/network resume-vm'
+Thu Mar 13 08:48:10 AM IST 2025 : error
+Thu Mar 13 08:48:10 AM IST 2025 : [rescue_nic] ens160 is already active.
+Thu Mar 13 08:48:10 AM IST 2025 : Finished '/etc/vmware-tools/scripts/vmware/network resume-vm'
