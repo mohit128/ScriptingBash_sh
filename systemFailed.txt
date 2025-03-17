@@ -1,0 +1,30 @@
+systemctl --failed
+
+#check the message of error or just google/Chatgpt it
+sudo journalctl -xe -u mcelog.service
+
+#either
+sudo systemctl stop service
+sudo systemctl disable service
+
+
+
+or 
+sudo dnf remove mcelog
+
+
+sudo dnf reinstall service -y
+sudo systemctl restart service
+
+
+systemctl --failed
+
+#if some residue remains
+
+sudo systemctl reset-failed service
+sudo rm -f /etc/systemd/system/service
+sudo systemctl daemon-reload
+
+
+systemctl --failed
+
